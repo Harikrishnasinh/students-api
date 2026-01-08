@@ -2,7 +2,7 @@ package mytypes
 
 type Student struct {
 	ID    int    `json:"id"`
-	Name  string `json:"name"`
-	Age   int    `json:"age"`
-	Email string `json:"email"`
+	Name  string `validate:"required" json:"name"`
+	Age   int    `validate:"required" json:"age"`
+	Email string `validate:"required" json:"email"`
 }
